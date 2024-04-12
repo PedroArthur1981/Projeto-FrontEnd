@@ -1,0 +1,70 @@
+@import url(index.css/eiqwnioeqweiq);
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1280px;
+    margin:  0 auto;
+}
+
+h1{
+    margin-left: 2%;
+}
+
+#titulofaixa {
+    height: 10px;
+    background: rgb(19, 0, 128);
+    width: 300px;
+}
+
+.texto{
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin-left: 2%;
+}
+
+
+.whats{
+    position: fixed;
+    z-index: 9999;
+    bottom: 1px;
+    right: 1px;
+}
+
+/*.subtitulo{
+    border: 4px solid black;
+    border-radius: 15px;
+    text-align: center;
+    margin: 2.5px;
+    font-size: 20px;
+    background-color: rgb(146, 142, 207);
+    color: black;
+}
+.img3{
+    height: 300px;
+    width: 300px;
+    margin-left: 550px;
+}
+.img4{
+    width: auto;
+    height: auto;
+}
+.img2{
+    width:450px;
+    height: 350px;
+    margin-left: 700px;
+}
+.titulo1{
+    text-align: center;
+    color: black;
+}
+p{
+    text-align: justify;
+}
+li{
+    text-align: justify;
+}

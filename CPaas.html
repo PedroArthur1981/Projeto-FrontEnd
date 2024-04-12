@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\cpaas.css">
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css\rodape.css">
+    <link rel="stylesheet" href="css\aumentar.css">
+    <link rel="shortcut icon" href="cookie.png" type="image/x-icon">
+    <link rel="stylesheet" href="css\cookies.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="js\jqyery.js"></script>
+    <title>CPaaS</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="cookies-msg" id="cookies-msg">
+            <div class="cookies-txt">
+                <p>Este site usa cookies e tecnologias afins, que são pequenos arquivos ou pedaços de texto baixados
+                    para um
+                    aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de
+                    acordo
+                    com a utilização dos cookies para te proporcionar uma melhor experiência.</p>
+                <div class="cookies-btn">
+                    <button onclick="aceito()">Aceito</button>
+                </div>
+            </div>
+        </div><!--cookies-msg-->
+        <div id="theme">
+            <button type="button" id="btnAumentar">A+</button>
+            <button type="button" id="btnDiminuir">A-</button>
+
+            <input type="checkbox" name="change-theme" id="change-theme" />
+            <label for="change-theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+            </label>
+        </div>
+        <a id="areadocliente" class="nav-link" href="login1.html" target="_blank">Área do Cliente</a>
+        <br>
+        <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+            <img src="imagem/telecall.png" alt="Logo Telecall" id="imagem">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a id="menu" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="menu" class="nav-link active" aria-current="page" href="#">CPaaS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="menu" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Plataforma & Soluções
+                            </a>
+                            <ul class="dropdown-menu">
+                                <div id="submenu">
+                                    <li> <img src="imagem\2FA.png" class="d-block w-100" alt="2FA"> <a href="2FA.html"> 2FA
+                                        </a>
+                                    </li>
+                                </div>
+                                <div id="submenu">
+                                    <li> <img src="imagem\Mascara.png" class="d-block w-100" alt="Número Mascara"><a
+                                            href="numerodemascara.html"> Número Máscara </a></li>
+                                </div>
+                                <div id="submenu">
+                                    <li> <img src="imagem\GoogleVerified.png" class="d-block w-100"
+                                            alt="Google Verified Calls"><a href="googleverified.html"> Google Verified Calls
+                                        </a></li>
+                                </div>
+                                <div id="submenu">
+                                    <li> <img src="imagem\SMS.png" class="d-block w-100" alt="SMS Programável"><a
+                                            href="smsprogramavel.html"> SMS Programável </a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagem\bannertelecall.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem\PABX2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem\celempresarial.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem\internetdedicada.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <br>
+        </div>
+        <div>
+            <h1><b>CPaaS: O que é ?</b></h1>
+            <hr id="titulofaixa" />
+            <br>
+            <h3 class="subtitulo">
+                Communications Platform as a Service<br>
+            </h3>
+            <h4><i>Plataforma de Comunicação como Serviço</i></h4>
+            <br>
+            <div class="clearfix">
+                <img src="imagem\cpaas.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="CPaas" height="450">
+                <div class="texto">
+                    <p>
+                        É uma solução de software de comunicação que atua
+                        como uma base sobre a qual desenvolvedores podem
+                        integrar uma variedade de aplicativos.
+                    </p>
+
+                    <p>
+                        Métodos de comunicação típicos, como voz, chamadas
+                        de vídeo ou mensagens de texto SMS, podem ser
+                        incorporados em outros sistemas por meio de APIs que
+                        se conectam à plataforma CPaaS
+                    </p>
+
+                    <p>
+                        Essas APIs permitem que as empresas expandam suas
+                        ofertas sem a necessidade de hardware ou software
+                        adicional.
+                    </p>
+                </div>
+            </div>
+            <div class="quadro">
+                O CPaaS, com sua escalabilidade,<br>
+                flexibilidade, autenticação e segurança<br>
+                aprimoradas, está revolucionando o modo como<br>
+                as empresas habilitadas em nuvem implementam<br>
+                comunicações de voz, SMS e vídeo.
+            </div>
+            <br>
+            <h1><b>CPaaS e a Transformação Digital</b></h1>
+            <hr id="titulofaixa" />
+            <br>
+            <div class="clearfix">
+                <img src="imagem\cpass1.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="CPaas" height="300">
+                <div class="texto">
+                    <p>
+                        Expectativa de crescimento estimado de
+                        $ 8,2 bilhões em 2021
+                    </p>
+
+                    <p>
+                        85% dos profissionais se conectam de
+                        maneira diferente com colegas e clientes do que
+                        faziam há apenas 5 anos.
+                    </p>
+
+                    <p>
+                        As receitas de CPaaS estão crescendo mais de
+                        40% ao ano.
+                    </p>
+
+                    <p>
+                        CPaaS já ultrapassou o mercado de UCaaS
+                        (Unified Communication as a Service).
+                    </p>
+
+                    <p>
+                        Marcas que estão em múltiplos canais
+                        melhoram a experiência do usuário e aumentam
+                        seus resultados.
+                    </p>
+                </div>
+            </div>
+
+            <h1><b>Usos</b></h1>
+            <hr id="titulofaixa" />
+            <br />
+
+            <article class="article">
+                <img src="imagem\logistico.jpg" id="imgtest">
+                <br>
+                <h2 id="h2"><b>Logística</b></h2>
+                <p id="usos">
+                    Acesso seguro com 2FA.
+                    <br>
+                    <br>
+                    Uso de números mascarados
+                    para proteção de funcionário
+                    e cliente.
+                    <br>
+                    <br>
+                    Mantenha o cliente
+                    informado sobre entrega e
+                    serviços.
+                    <br>
+                    <br>
+                    Verified calling para
+                    confirmação de entregas.
+                </p>
+                <img src="imagem\varejo.jpg" id="imgtest">
+                <h2 id="h21"><b>Varejo</b></h2>
+                <p id="usos">
+                    Compra segura com 2FA.
+                    <br>
+                    <br>
+                    Avisos sobre compras e
+                    entregas.
+                    <br>
+                    <br>
+                    Upsell com novas ofertas e
+                    vantagens via SMS ou
+                    Verified Calling.
+                    <br>
+                    <br>
+                    <br>
+
+                </p>
+                <img src="imagem\call center.jpg" id="imgtest">
+                <h2 id="h22"><b>Call Center</b></h2>
+                <p id="usos">
+                    Melhore taxas de abertura
+                    utilizando alertas SMS para
+                    confirmações.
+                    <br>
+                    <br>
+                    Economia de números com o
+                    uso de um único número
+                    máscara por todos os agentes.
+                    <br>
+                    <br>
+                    Verified Calling para
+                    confirmação de
+                    agendamentos.
+                    <br>
+                    <br>
+                </p>
+                <img src="imagem\saude.jpg" id="imgtest">
+                <h2 id="h23"><b>Saúde</b></h2>
+                <p id="usos">
+                    Acesso seguro com 2FA.
+                    <br>
+                    <br>
+                    Melhore o agendamento e
+                    reduza faltas com lembretes por
+                    SMS.
+                    <br>
+                    <br>
+                    Tokens de autorização para
+                    procedimentos com 2FA.
+                    <br>
+                    <br>
+                    Verified Calling para avisos de
+                    resultados e agendamentos.
+                </p>
+            </article>
+            <br>
+            <h1><b>Exemplos</b></h1>
+            <hr id="titulofaixa" />
+            <br>
+            <div class="container text-center">
+                <div class="row row-cols-2">
+                  <div class="col"><img src="imagem\Exempl1.jpeg" alt="Exemplo 1" class="img-fluid"></div>
+                  <div class="col"><img src="imagem\Exempl2.jpeg" alt="Exemplo 2" class="img-fluid"></div>
+                  <div class="col"><img src="imagem\Exempl3.jpeg" alt="Exemplo 3" class="img-fluid"></div>
+                  <div class="col"><img src="imagem\Exempl4.jpeg" alt="Exemplo 4" class="img-fluid"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h1><b>Vantagens Telecall</b></h1>
+            <hr id="titulofaixa" />
+            <br />
+            <h3>
+                <dl id="table2" class="row">
+                    <dt class="col-sm-3">Confiança</dt>
+                    <dd class="col-sm-9">Empresa que já conhecem e confiam;</dd>
+
+                    <dt class="col-sm-3">Agilidade</dt>
+                    <dd class="col-sm-9">Aplicativos de rápida implementação;</dd>
+
+                    <dt class="col-sm-3">Garantia de Rede</dt>
+                    <dd class="col-sm-9">Rede própria de alta capacidade e controle total de ponta-a-ponta;</dd>
+
+                    <dt class="col-sm-3 text-truncate">Suporte ao Cliente</dt>
+                    <dd class="col-sm-9">Representantes locais de vendas e suporte;</dd>
+
+                    <dt class="col-sm-3">Preço</dt>
+                    <dd class="col-sm-9">Melhor custo benefício para um conjunto completo de recursos e serviços;
+                    </dd>
+                </dl>
+
+            </h3>
+            <br>
+            <div class="whats">
+                <a href="https://wa.me/552130301010" target="_blank">
+                <img src="imagem/whats.png" width="60" height="60">
+                </a>
+            </div>
+            <footer>
+                <br>
+                <div class="logotipo">
+                    <img src="imagem\telecall-logo-white-1.png" id="rodapeimg">
+                    <nav class="redes">
+                        <ul>
+                            <li><a href="https://www.facebook.com/TelecallBr/" target="_blank"><img
+                                        src="imagem\facebook.png" alt="Nosso Facebook"></a></li>
+                            <li><a href="https://www.youtube.com/@telecall1702" target="_blank"><img
+                                        src="imagem\youtube.png" alt="Canal no YouTube"></a></li>
+                            <li><a href="https://www.instagram.com/telecallbr/" target="_blank"><img
+                                        src="imagem\instagram.png" alt="Perfil no Instagram"></a></li>
+                        </ul>
+                    </nav>
+                    <hr size="10" width="247%" align="center" noshade>
+                </div>
+                <div id="rodape1">
+                    Copyright © 2023 Telecall. Todos os direitos reservados.
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+            </script>
+        <script src="js\dark.js"></script>
+        <script src="js\fonte.js"></script>
+        <script src="js\cookies.js"></script>
+</body>
+
+</html>

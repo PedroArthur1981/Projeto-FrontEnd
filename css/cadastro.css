@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    max-width: 1280px;
+    margin:  0 auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url("imagem\Planos-de-celular-empresarial.png") !important;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.form {
+    width: 100%;
+    padding: 0;
+}
+
+.form-image {
+    padding: 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.form-image img {
+    width: 100%;
+    height: 40%;
+    margin-left: 10%;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.form-header {
+    margin-bottom: 0.5%;
+}
+
+h1{
+    color: #6b63fff1 !important;
+    font-style: bold ;
+}
+
+.login-button {
+    margin-left: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 10%;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.login-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500%;
+    color: #fff;
+}
+
+.form-header h1::after {  /*subilhado*/
+    content: '';
+    display: block;
+    width: 20%;
+    height: 1%;
+    background-color: #6c63ff;
+    color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10%;
+}
+
+
+#cadCpf {
+    width: 25%;
+}
+
+#cadNome{
+    width: 97%;
+}
+
+#cadMaterno{
+    width: 97%;   
+}
+
+#cadData{
+    width: 60%;
+}
+
+#cadEmail{
+    width: 93%;
+}
+
+#cadCel{
+    width: 60%;
+}
+
+#cadFxo{
+    width: 55%;
+}
+
+#cadCep{
+    width: 20%;
+}
+
+#cadRua{
+    width: 80%;
+}
+
+#cadNumero{
+    width: 55%;
+}
+
+#cadBairro{
+    width: 39%;
+}
+
+#cadComplemento{
+    width: 78%;
+}
+
+#cadCidade{
+    width: 80%;
+}
+
+#cadEstado{
+    width: 15%;
+}
+
+#cadLogin{
+    width: 24%;
+}
+
+#cadSenha{
+    width: 52%;
+}
+
+#cadConfirmSenha{
+    width: 65%;
+}
+
+#grupo{
+    column-count: 2;
+}
+
+#grupo1{
+    column-count: 2;
+}
+
+#grupo2{
+    column-count: 2;
+}
+
+#grupo3{
+    column-count: 2;
+}
+
+#grupo5{
+    column-count: 2;
+}
+
+.continue-button button {
+    width: 10%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.continue-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+button{
+    background-color: transparent;
+    border-color: #0d009c;
+    color: #ffffff;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+  
+button:hover{
+    background-color: #ffffff;
+    color: #010a3d;
+}
+  
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+  
+
+
+@media(max-width: 450px){
+    .container .img .form .form-image{
+        display: none;
+        flex-wrap: wrap;
+    }
+
+}
+  

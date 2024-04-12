@@ -1,0 +1,66 @@
+@import url(index.css/eiqwnioeqweiq);
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1280px;
+    margin:  0 auto;
+}
+
+h1{
+    margin-left: 2%;
+}
+
+#titulofaixa {
+    height: 10px;
+    background: rgb(19, 0, 128);
+    width: 300px;
+}
+
+.texto{
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin-left: 2%;
+}
+
+.whats{
+    position: fixed;
+    z-index: 9999;
+    bottom: 1px;
+    right: 1px;
+}
+
+@media(max-width: 1200px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+  
+  
+@media(max-width: 992px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
+    
+@media(max-width: 576px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

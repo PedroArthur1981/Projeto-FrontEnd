@@ -1,0 +1,36 @@
+footer {
+    background-color: rgb(23, 79, 163);    
+}
+.logotipo {
+    width: 40%;
+    margin-left: 1%;
+    font-size: 0.7em;
+   padding: 0;
+}
+.logotipo img {
+    width: 20%;
+    vertical-align: middle;
+}
+.redes {
+    width: 60%;
+    margin-left: 180%;
+    
+}
+.redes img {
+    width: 18%;
+}
+.redes ul li {
+    text-transform: uppercase;
+    list-style-type: none;
+    display: inline;
+    
+}
+#rodape1{
+    text-align: center;
+    color: white;
+}
+
+#rodapeimg{
+    width: 200px;
+    height: 50px;
+}

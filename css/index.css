@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1280px;
+    margin:  0 auto;
+}
+
+#navbar{
+    background-color: rgb(235, 35, 35) !important;
+    padding: 0;
+}
+
+#imagem{
+    width: 450px !important;
+    height: 90px;
+    margin: 0 !important;
+    
+    
+}
+
+#ident{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 26, 255);
+    height: 25%;
+    padding: 0px;
+    font-size: 150%;
+}
+
+/*#areadocliente{
+    margin-left: 50%;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    height: 25%;
+    padding: 0px;
+    font-size: 100%;
+    border: #6c63ff;   
+}*/
+
+#menu{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin-left: 0px;
+}
+
+form{
+    color: blue;
+    text-align: center;
+}
+
+
+
+.continue-button button {
+    width: 10%;
+    margin-top: 0.1em;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 45%;
+}
+.continue-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+h6{
+    text-align: center;
+}
+
+.tamnome{
+    width: 300px;
+}
+
+.tamsobrenome{
+    width: 250px;
+}
+
+.tamemail{
+    width: 320px;
+    
+}
+
+header {
+    display: flex;
+    box-shadow: 0.5px 0.5px 10px 0.5px #000;
+}
+
+html, body{
+   transition: 0.3s;
+}
+
+.bi {
+   font-size: 1.3rem;
+   cursor: pointer;
+   
+}
+  
+.bi-moon {
+    display: none;
+    
+}
+  
+input[type="checkbox"] {
+    display: none;
+    
+}
+
+#theme{
+    margin-left: 90%;
+}
+
+/* Dark theme */
+.dark, .dark header {
+   background-color: #000000;
+   color: #fff;
+}
+
+.dark .bi-sun {
+   display: none;
+}
+ 
+.dark .bi-moon {
+   display: block;
+}
+
+#submenu{
+    width: 40%;
+    height: 40%;
+    margin-left: 20%;
+    columns: 2;
+    
+}
+
+#open-modal{
+    color: white;
+}
+
+.whats{
+    position: fixed;
+    z-index: 9999;
+    bottom: 1px;
+    right: 1px;
+}
+
+@media(max-width: 3000px){
+    .container{
+        width: 100%;
+    }
+}
+  
+  
+@media(max-width: 992px){
+    .container{
+        width: 100%;
+    }
+}
+  
+  
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+    }
+
+   textarea{
+        width: 100% !important;
+    }
+
+}
+  
+@media(max-width: 576px){
+    .container{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100% !important;
+    }
+}
